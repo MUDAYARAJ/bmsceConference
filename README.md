@@ -1,8 +1,9 @@
 
 # BMS Conference
 
-Welcome to the official repository of the College Conference Website! This website serves as a platform for our college's annual conference, bringing together students, faculty, and industry professionals for knowledge sharing and networking opportunitie
+Welcome to the official repository of the College Conference Website! This website serves as a platform for our college's annual conference, bringing together students, faculty, and industry professionals for knowledge sharing and networking opportunities.
 
+## Features
 - Browse and explore conference sessions, workshops, and keynote speakers.
 - View the conference schedule and create a personalized agenda.
 - Get to know our esteemed speakers and their profiles.
@@ -12,12 +13,12 @@ Welcome to the official repository of the College Conference Website! This websi
 
 ## Technologies Used
 
-HTML,CSS,JS,Bootstrap
+FrontEnd:HTML,CSS,JS,Bootstrap
 
 
 
 
-# Screen Shots
+## Screen Shots
 
 ![Alt text](./ss/ss1.png?raw=true "Optional Title")
 ![Alt text](./ss/ss2.png?raw=true "Optional Title")
