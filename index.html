@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>BMSCE Conference HTML5 Template</title>
+
+    <style>
+        .example h1,
+        .example p,
+        .example .button {
+            transition: all .2s ease-in-out;
+        }
+        
+        .example h1 {
+            color: #FFFFFF;
+        }
+        
+        .example p {
+            color: #FFFFFF;
+        }
+        
+        .buttons .button {
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+        
+        .buttons .button:hover {
+            color: #151515;
+            background-color: #FFFFFF;
+        }
+        
+        .example {
+            font-family: 'Roboto', sans-serif;
+            width: 550px;
+            height: 378px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .example .flipdown {
+            margin: auto;
+        }
+        
+        .example h1 {
+            text-align: center;
+            font-weight: 100;
+            font-size: 3em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .example p {
+            text-align: center;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 35px;
+        }
+        
+        .example .buttons {
+            width: 100%;
+            height: 50px;
+            margin: 50px auto 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .example .buttons p {
+            height: 50px;
+            line-height: 50px;
+            font-weight: 400;
+            padding: 0px 25px 0px 0px;
+            color: #333;
+            margin: 0px;
+        }
+        
+        .example .button {
+            display: inline-block;
+            height: 50px;
+            box-sizing: border-box;
+            line-height: 46px;
+            text-decoration: none;
+            color: #333;
+            padding: 0px 20px;
+            border: solid 2px #333;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all .2s ease-in-out;
+        }
+        
+        .example .button:hover {
+            background-color: #333;
+            color: #FFF;
+        }
+        
+        .example .button i {
+            margin-right: 5px;
+        }
+        
+        @media(max-width: 550px) {
+            .example {
+                width: 100%;
+                height: 362px;
+            }
+            .example h1 {
+                font-size: 2.5em;
+            }
+            .example p {
+                margin-bottom: 25px;
+            }
+            .example .buttons {
+                width: 100%;
+                margin-top: 25px;
+                text-align: center;
+                display: block;
+            }
+            .example .buttons p,
+            .example .buttons a {
+                float: none;
+                margin: 0 auto;
+            }
+            .example .buttons p {
+                padding-right: 0px;
+            }
+            .example .buttons a {
+                display: inline-block;
+            }
+        }
+        
+        table {
+            /* font-family: arial, sans-serif;*/
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+        @media (max-width: 1200px) {
+            .site-name {
+                font-size: 14px;
+                width: 100%; /* Adjust width to take the full available width */
+                word-wrap: break-word;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .site-name {
+                font-size: 12px;
+            }
+        }
+     
+            @media (max-width: 1200px) {
+                .scrolling-text {
+                    font-size: 14px;
+                    width: 100%; /* Adjust width to take the full available width */
+                    word-wrap: break-word;
+                }
+            }
+      
+        
+    </style>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 5, 2023 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = ": " + days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+            // document.getElementById("demo1").innerHTML = ": " + days + "d " + hours + "h " +
+            //     minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("demo1").innerHTML = "EXPIRED";
+
+            }
+        }, 1000);
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <!--
+
+BMSCE Conference TemplateMo
+
+https://templatemo.com/tm-545-finance-business
+
+-->
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <!-- <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <ul class="left-info">
+                        <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="right-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <nav class="navbar2 navbar-expand-lg " style="background-color: #343a40d6;height: 50px;align-items: left;">
+        <div class="col-2 text-start "></div>
+        <div class="collapse navbar-collapse" id="navbarResponsive"></div>
+        <!-- <ul class="navbar-nav">
+
+            <li class="nav-item ">
+                <a class="nav-link " href="https://www.ieee.org/ ">IEEE.org |</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore Digital Library |</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="https://standards.ieee.org/ ">IEEE Standards |</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="https://spectrum.ieee.org/ ">IEEE Spectrum Online |</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="https://www.ieee.org/sitemap.html?WT.mc_id=mn_smap ">More IEEE Sites |</a>
+            </li>
+
+        </ul> -->
+        <div class="scrolling-text-container">
+            <div class="scrolling-text" id="heading" style="width: 100%;">IEEE International Conference on Emerging Technologies in Computer Science for Interdisciplinary Applications</div>
+            
+        </div>
+          
+          
+          
+          
+          
+    </nav>
+
+    <header class="header_role">
+        <div class="container" style="display: flex; flex-direction:row;background-color:#1E90FF;padding:5px;">
+            <div class="col-6 text-start" style="display: flex; flex-direction:row;">
+
+                <div class=" col-3 " style="margin-right: 10%;padding-top:10px; font-weight:600;display: flex; flex-direction:row;">
+                    <div id="resp"> <img src="./assets/images/logonew.jpg" width="65px" style="margin-right:10px">
+                    </div>
+                    <p id="resp" style="font-size: 24px;font-weight: 800;color:white;font-family:Arial, Helvetica, sans-serif">IEEE ICETCS</p>
+                </div>
+
+                <div class="col-8 " style="padding:08px;font-family:'Poppins', sans-serif">
+                    <div class="site-name " style="font-weight: 800; color:white ;width:1000px;font-size:16px">IEEE International Conference on Emerging Technologies in Computer Science for Interdisciplinary Applications</div>
+                    <div class="site-name " style="color: white;font-weight:700 ">22nd Feb To 23rd Feb 2024
+                        
+                    </div>
+                    <div class="site-name " id="q"style="color: white;font-weight:700;width:100% ">Department of Computer Science & Engineering ,BMS College of Engineering</div>
+                    <div class="site-name " id="q"style="color: white; font-weight:700">Bengaluru,India 
+                        </div>
+                </div>
+
+
+                <!-- <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarResponsive " aria-controls="navbarResponsive " aria-expanded="false " aria-label="Toggle navigation ">
+                  <span class="navbar-toggler-icon "></span>
+                </button> -->
+            </div>
+            <div class="col-6 text-end " style="display: flex; flex-direction:row;padding-top:8px;justify-content:flex-end ">
+             <a href="https://www.ieee.org/" id="resp"><img src="./assets/images/ie.png " width="80px" style="margin-right:10px"></a>
+                <div class="col-2 " id="resp">
+                    <a href="https://bmsce.ac.in/"> <img src="./assets/images/bmslogo.png " width="80px "></a>
+                </div>
+                <style>
+                    @media (max-width: 1200px) {
+                        #resp {
+                            display: none;
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg" style="background-color: #1E90FF;height: 50px;border-radius: 0px 0px 20px 20px;margin-top: 1px;align-items: center;">
+            <!-- <div class="col-2 text-start "></div> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav" style="margin: 0 auto;">
+
+                    <li class="nav-item active">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="committee.html">Committee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="callforpapers.html ">Call for papers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="keynote.html ">Keynote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="submissions.html ">Submission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="publication.html ">Publication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="registration.html ">Registration</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="venue.html ">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text " id="top " style="margin-top: 150px; ">
+        <div class="Modern-Slider ">
+            <!-- Item -->
+            <div class="item item-1 ">
+                <div class="img-fill ">
+                    <!-- <div class="text-content ">
+                        <h6>we are ready to help you</h6>
+                        <h4>Financial Analysis<br>&amp; Consulting</h4>
+                        <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. This is a multiple-page version with different HTML pages. <a href="one-page.html ">One-page version</a> is available as of 2021 February.</p>
+                        <a href="contact.html " class="filled-button ">contact us</a>
+                    </div> -->
+                </div>
+            </div>
+            <!-- // Item -->
+            <!-- Item -->
+            <div class="item item-2 ">
+                <div class="img-fill ">
+                </div>
+            </div>
+            <div class="item item-3 ">
+                <div class="img-fill ">
+                </div>
+            </div>
+
+            <!-- // Item -->
+            <!-- Item -->
+            <!-- <div class="item item-3 ">
+                <div class="img-fill ">
+                    <div class="text-content ">
+                        <h6>we have a solid background</h6>
+                        <h4>Market Analysis<br>&amp; Statistics</h4>
+                        <p>You can download, edit and use this layout for your business website. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+                        <a href="about.html " class="filled-button ">learn more</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <!-- <div class="request-form ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8 ">
+                    <h4>Request a call back right now ?</h4>
+                    <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
+                </div>
+                <div class="col-md-4 ">
+                    <a href="contact.html " class="border-button ">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="row" style="margin-left:30%">
+        <h2 style="font-size: 50px;color:red;">Ends In </h2>
+        <h2 id="demo" style="font-size: 50px;"></h2>
+    </div>
+
+    <div class="services ">
+        <div class="container ">
+            <div class="row ">
+                <!-- <div class="col-md-4 "> -->
+                <div class="col-md-6" style="
+                height: 400px;
+                overflow: auto;" id="responser">
+                <div class="service-container">
+                    <div class="section-heading " style="margin-top: 30px;">
+                        <h3>NEWS & <em>ANNOUNCEMENTS</em></h3>
+                        <!-- <span>Aliquam id urna imperdiet libero mollis hendrerit</span> -->
+                    </div>
+                    <!-- <ul style="margin-bottom: 20px;margin-left:5px" style="font-size: medium;font-family:'Poppins', sans-serif;">
+
+                        <li style="font-size: small;font-weight: bold;">NEW INITIATIVE - CONFERENCE TRAVEL GRANTS Directed to researchers from low-income countries.</li>
+
+                        <hr>
+                        <li style="font-weight: bold;">Register for the upcoming conference summit to be held in BMSCE</li>
+                        <h2 style="font-size: small;">Welcome to the IEEE International Conference on Communication (ICC) website. This year IEEE ICC 2023 will focus on “Sustainable Communications for Renaissance“. We will feature a comprehensive high-quality technical program including
+                            13 symposia and a variety of tutorials and workshops. IEEE ICC 2023 will also include an attractive industry program aimed at practitioners, with keynotes and panels from prominent research, industry and government leaders,
+                            business and industry panels, and technological exhibits. IEEE ICC 2023 conference will be held in person 28 May - 01 June 2023, in Rome, Italy. Instructions for Presenters available If you are to present your work at ICC 2023,
+                            either at a symposium or at a workshop, you can find instructions on technical equipment and guidelines for presentation here: https://icc2023.ieee-icc.org/authors/instructions-presenters - <em style="color: #1E90FF;">Click here</em></h2>
+                        <hr>
+                        <li style="font-weight: bold;">Registration Now Live</li>
+                        <li style="font-size: small;">View the Registration Fees and Benefits.</li>
+                    </ul> -->
+                    <hr>
+                    <div class="row">
+                        <ul><li style="font-size: 17px;font-weight: bold;font-family: sans-serif;">NEW INITIATIVE - CONFERENCE TRAVEL GRANTS Directed to researchers from low-income countries.</li></ul>
+                            <div class="row" style="font-size: 25px;">
+                            </div>
+                        </div>
+                    <hr>
+                    <div class="row">
+                        <ul><li style="font-size: 17px;font-weight: bold;font-family: sans-serif;">Register for the upcoming conference summit to be held in BMSCE</li></ul>
+                        <h2 style="font-size: 14px;font-weight: normal;">Welcome to the IEEE International Conference on Communication (ICC) website. This year IEEE ICC 2023 will focus on “Sustainable Communications for Renaissance“. We will feature a comprehensive high-quality technical program including
+                            13 symposia and a variety of tutorials and workshops. IEEE ICC 2023 will also include an attractive industry program aimed at practitioners, with keynotes and panels from prominent research, industry and government leaders,
+                            business and industry panels, and technological exhibits. IEEE ICC 2023 conference will be held in person 28 May - 01 June 2023, in Rome, Italy. Instructions for Presenters available If you are to present your work at ICC 2023,
+                            either at a symposium or at a workshop, you can find instructions on technical equipment and guidelines for presentation here: https://icc2023.ieee-icc.org/authors/instructions-presenters - <em style="color: #1E90FF;">Click here</em></h2>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <ul><li style="font-size: 17px;font-weight: bold;font-family: sans-serif;">Registration Now Live</li></ul>
+                        
+                    </div>
+                    <div class="row">
+                        <h2 style="font-size: 14px;font-weight: normal;">View the Registration Fees and Benefits.</h2>
+                    </div>
+                    <a href="registration.html" class="filled-button" style="margin-left: 30px;">Register Here</a>
+                    <hr>
+                    <!-- <div class="row">
+                        <h2 style="font-size: 17px;font-weight: bold;font-family: sans-serif;">Important Dates Paper Submission opens: 1/10/2022</h2>
+                    </div> -->
+                        <!-- <div style="font-size: 14px;margin-left: 30px;">
+                            <li> Registration last date: 15/08/2023</li>
+                            <li> Registration last date: 15/08/2023</li>
+                            <li> Registration last date: 15/08/2023</li>
+                            <li> Registration last date: 15/08/2023</li>
+                            <li> Registration last date: 15/08/2023</li>
+                        </div> -->
+
+                </div>
+                </div>
+                    
+                <!-- <div class="col-md-6" style="
+                height: 400px;
+                overflow: auto;">
+                    <table>
+                        <tr>
+                            <th>
+                                <div class="section-heading ">
+                                    <h3>IMPORTANT DATES & <em>EVENTS</em></h3>
+                                    <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
+                                </div>
+                            </th> -->
+                            <!-- <ul style="margin-bottom: 20px;margin-left:5px" style="font-size: medium;font-family:'Poppins', sans-serif;"> -->
+
+                        <!-- </tr> -->
+                        <!-- <div class="col-md-4" style="
+                height: 400px;
+                overflow: auto;"> -->
+                        <!-- <tr>
+                            <td>
+                                <li style="font-size: small;font-weight: bold;">NEW INITIATIVE - CONFERENCE TRAVEL GRANTS Directed to researchers from low-income countries.</li>
+                                <div class="row" style="font-size: 25px;">
+                                    <h2 style="font-size: smaller;color:#1E90FF; margin-left: 15px;">Ends In: </h2>
+                                    <h2 id="demo" style="font-size: smaller;"></h2>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <li style="font-weight: bold;">Register for the upcoming conference summit to be held in BMSCE</li>
+                                <h2 style="font-size: small;">Welcome to the IEEE International Conference on Communication (ICC) website. <em style="color: #1E90FF;">Click here</em></h2>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <li style="font-weight: bold;">Registration Now Live</li>
+                                <div class="row" style="font-size: large;">
+                                    <h2 style="font-size: smaller;color:#1E90FF; margin-left: 15px;">Ends In: </h2>
+                                    <h2 id="demo1" style="font-size: smaller;"></h2>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div> -->
+                <div class="col-md-6" style="height: 300px">
+                    <div class="boxstyle" style="height: 300px;">
+                        <div class="section-heading">
+                            <h3>IMPORTANT DATES & <em>EVENTS</em></h3>
+                            <!-- <span>Aliquam id urna imperdiet libero mollis hendrerit</span> -->
+                        </div>
+                        <hr>
+                        <div class="row">
+                        <ul><li style="font-size: 17px;font-weight: bold;font-family: sans-serif;">Submission Closes/Deadline - Sep 15th 2023</li></ul>
+                            <div class="row" style="font-size: 25px;">
+                                <h2 style="font-size: 16px;color:blue;margin-left: -24px;">  </h2>
+                                <h2 id="demo" style="font-size: 16px;"></h2>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <ul><li style="font-size: 17px;font-weight: bold;font-family: sans-serif;">Acceptance -      Nov 15th 2023</li></ul>
+                            <!-- <h2 style="font-size: 14px;">Welcome to the IEEE International Conference on Communication (ICC) website. <em style="color: red;font-style: normal;font-family: sans-serif;font-size: 16px;">(Click here)</em></h2> -->
+                        </div>
+                        <hr>                        
+                        <div class="row">
+                            <ul><li style="font-size: 17px;font-weight: bold;font-family: sans-serif;">Camera Ready/Registration - Dec 01st 2023</li></ul>
+                           
+                            
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- </ul> -->
+                <!-- <div>
+                    <p id="demo"></p>
+                </div> -->
+            </div>
+
+
+            <!-- <div class="col-md-4 ">
+                    <div class="service-item ">
+                        <img src="assets/images/service_01.jpg " alt=" ">
+                        <div class="down-content ">
+                            <h4>Digital Currency</h4>
+                            <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                            <a href=" " class="filled-button ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="service-item ">
+                        <img src="assets/images/service_02.jpg " alt=" ">
+                        <div class="down-content ">
+                            <h4>Market Analysis</h4>
+                            <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                            <a href=" " class="filled-button ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="service-item ">
+                        <img src="assets/images/service_03.jpg " alt=" ">
+                        <div class="down-content ">
+                            <h4>Historical Data</h4>
+                            <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
+                            <a href=" " class="filled-button ">Read More</a>
+                        </div>
+                    </div>
+                </div> -->
+
+        </div>
+
+        <!-- Display the countdown timer in an element -->
+
+
+        <!-- <div class="example"> -->
+        <!-- <h1>FlipDown.js</h1> -->
+        <!-- <p>⏰ A lightweight and performant flip styled countdown clock</p> -->
+        <!-- <div id="flipdown" class="flipdown"></div>
+            <div class="buttons"> -->
+        <!-- <p>Version: <span id="ver"></span> (&lt;11KB minified)</p> -->
+        <!-- <a href="https://github.com/PButcher/flipdown#flipdown" target="_blank" class="buttonner"><i class="fab fa-github"></i> <span>Get started</span></a> -->
+        <!-- </div>
+        </div> -->
+
+    </div>
+    </div>
+
+    <div class="fun-facts ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="left-content ">
+                        <h2>About <em>College</em></h2>
+                        <p>BMSCE is the first private sector initiative in engineering education in India. Over the past 74 years of its illustrious existence, the institution has produced more than 40,000 engineers/leaders who have enriched the world through
+                            their immense contributions for mankind.</p>
+                        <a href="https://bmsce.ac.in/home/About-BMSCE " class="filled-button ">Read More</a>
+                    </div>
+                    <br><br>
+                    <div class="left-content ">
+                        <h2>About <em>Department</em></h2>
+                        <p>The department of Computer Science and Engineering, B.M.S College of Engineering is a regionally and nationally renowned department in computer science and information technology since 1983. With the vision to produce professionals,
+                            researchers, innovators and entrepreneurs having ethics and social responsibilities,our focus is towards moulding the students with strong technical knowledge, research attitude and societal values.</p>
+
+                    </div>
+                    <a href="https://bmsce.ac.in/home/Computer-Science-and-Engineering-About " class="filled-button ">Read More</a>
+
+                </div>
+                <div class="col-md-6 align-self-center ">
+                    <h1>Our Publications <em>So Far</em></h1>
+                    <div class="row ">
+                        <div class="col-md-6 ">
+                            <div class="count-area-content ">
+                                <div class="count-digit ">58</div>
+                                <div class="count-title ">2018-19</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="count-area-content ">
+                                <div class="count-digit ">244</div>
+                                <div class="count-title ">2017-18</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="count-area-content ">
+                                <div class="count-digit ">262</div>
+                                <div class="count-title ">2016-17</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="count-area-content ">
+                                <div class="count-digit ">184</div>
+                                <div class="count-title ">2015-16</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-info ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="more-info-content ">
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <div class="left-image " style="margin-top: 10px;">
+                                    <img src="assets/images/confo.jpg " alt=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-6 align-self-center ">
+                                <div class="right-content ">
+                                    <span>Who we are</span>
+                                    <h2>Get to know about our <em>conference website</em></h2>
+                                    <p>The primary goal of the conference is to promote research and developmental activities in Network, Multimedia and Information Technology, another goal is to promote scientific information interchange between researchers,
+                                        developers, engineers, students, and practitioners working all around the world. The conference provides an exceptional opportunity for deliberation of latest trends and technologies in the design, application and
+                                        development of Information Technology. It also creates a forum for young researchers to find the potential research problems and prospects in their respective research areas.</p>
+                                    <a href="https://bmsce.ac.in/home " class="filled-button ">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="more-info " style="margin-top: 0%;">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="more-info-content ">
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <div class="left-image ">
+                                    <img src="assets/images/more-info.jpg " alt=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-6 align-self-center ">
+                                <div class="right-content ">
+                                    <span>Who we are</span>
+                                    <h2>Get to know about our <em>College</em></h2>
+                                    <p>BMSCE is the first private sector initiative in engineering education in India. Over the past 74 years of its illustrious existence, the institution has produced more than 40,000 engineers/leaders who have enriched
+                                        the world through their immense contributions for mankind. Started with only 03 undergraduate courses, BMSCE today offers 13 Undergraduate & 16 Postgraduate courses both in conventional and emerging areas. 14 of
+                                        its Departments are recognized as Research Centers offering PhD/M.Sc (Engineering by Research) degrees in Science, Engineering and Management. </p>
+                                    <a href="https://bmsce.ac.in/home/About-BMSCE" class="filled-button ">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-info " style="margin-top: 0%;">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="more-info-content ">
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <div class="left-image ">
+                                    <img src="assets/images/more-info.jpg " alt=" ">
+                                </div>
+                            </div>
+                            <div class="col-md-6 align-self-center ">
+                                <div class="right-content ">
+                                    <span>Who we are</span>
+                                    <h2>Get to know about our <em>Department</em></h2>
+                                    <p>The department of Computer Science and Engineering, B.M.S College of Engineering is a regionally and nationally renowned department in computer science and information technology since 1983. With the vision to produce
+                                        professionals, researchers, innovators and entrepreneurs having ethics and social responsibilities,our focus is towards moulding the students with strong technical knowledge, research attitude and societal values.
+                                        The syllabus of department of CSE has been designed by including core fundamental subjects, advanced and cutting-edge technologies which prepares the students for industries and higher studies. The department has
+                                        well experienced and dedicated faculty team to deliver quality education to the students. </p>
+                                    <a href="https://bmsce.ac.in/home/Computer-Science-and-Engineering-About" class="filled-button ">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="testimonials ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="section-heading ">
+                        <h2>What they say <em>about us</em></h2>
+                        <span>testimonials from our greatest clients</span>
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="owl-testimonials owl-carousel ">
+
+                        <div class="testimonial-item ">
+                            <div class="inner-content ">
+                                <h4>George Walker</h4>
+                                <span>Chief Financial Analyst</span>
+                                <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus. "</p>
+                            </div>
+                            <img src="http://placehold.it/60x60 " alt=" ">
+                        </div>
+
+                        <div class="testimonial-item ">
+                            <div class="inner-content ">
+                                <h4>John Smith</h4>
+                                <span>Market Specialist</span>
+                                <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi. "</p>
+                            </div>
+                            <img src="http://placehold.it/60x60 " alt=" ">
+                        </div>
+
+                        <div class="testimonial-item ">
+                            <div class="inner-content ">
+                                <h4>David Wood</h4>
+                                <span>Chief Accountant</span>
+                                <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique. "</p>
+                            </div>
+                            <img src="http://placehold.it/60x60 " alt=" ">
+                        </div>
+
+                        <div class="testimonial-item ">
+                            <div class="inner-content ">
+                                <h4>Andrew Boom</h4>
+                                <span>Marketing Head</span>
+                                <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis. "</p>
+                            </div>
+                            <img src="http://placehold.it/60x60 " alt=" ">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="callback-form ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="section-heading ">
+                        <h2>Request a <em>call back</em></h2>
+                        <span>Etiam suscipit ante a odio consequat</span>
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="contact-form ">
+                        <form id="contact " action=" " method="post ">
+                            <div class="row ">
+                                <div class="col-lg-4 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="name " type="text " class="form-control " id="name " placeholder="Full Name " required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="email " type="text " class="form-control " id="email " pattern="[^ @]*@[^ @]* " placeholder="E-Mail Address " required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="subject " type="text " class="form-control " id="subject " placeholder="Subject " required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <fieldset>
+                                        <textarea name="message " rows="6 " class="form-control " id="message " placeholder="Your Message " required=" "></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <fieldset>
+                                        <button type="submit " id="form-submit " class="border-button ">Send Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="partners ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="owl-partners owl-carousel ">
+
+                        <div class="partner-item ">
+                            <img src="assets/images/client-01.png " title="1 " alt="1 ">
+                        </div>
+
+                        <div class="partner-item ">
+                            <img src="assets/images/client-01.png " title="2 " alt="2 ">
+                        </div>
+
+                        <div class="partner-item ">
+                            <img src="assets/images/client-01.png " title="3 " alt="3 ">
+                        </div>
+
+                        <div class="partner-item ">
+                            <img src="assets/images/client-01.png " title="4 " alt="4 ">
+                        </div>
+
+                        <div class="partner-item ">
+                            <img src="assets/images/client-01.png " title="5 " alt="5 ">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 footer-item ">
+                    <h4>BMSCE Conference</h4>
+                    <p>Discover innovative ideas, expand your knowledge, and network with industry professionals at our dynamic College Conference, igniting your passion for learning.</p>
+                    <ul class="social-icons ">
+                        <li><a rel="nofollow " href="https://fb.com/templatemo " target="_blank "><i class="fa fa-facebook "></i></a></li>
+                        <li><a href="# "><i class="fa fa-twitter "></i></a></li>
+                        <li><a href="# "><i class="fa fa-linkedin "></i></a></li>
+                        <li><a href="# "><i class="fa fa-behance "></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item ">
+                    <h4>Useful Links</h4>
+                    <ul class="menu-list ">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="committee.html">Committee</a></li>
+                        <li><a href="callforpapers.html">Call for papers</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="contact.html ">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item ">
+                    <h4>Additional Pages</h4>
+                    <ul class="menu-list ">
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">How We Work</a></li>
+                        <li><a href="# ">Quick Support</a></li>
+                        <li><a href="# ">Contact Us</a></li>
+                        <li><a href="# ">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item last-item ">
+                    <h4>Contact Us</h4>
+                    <div class="contact-form ">
+                        <form id="contact footer-contact " action=" " method="post ">
+                            <div class="row ">
+                                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="name " type="text " class="form-control " id="name " placeholder="Full Name " required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                    <fieldset>
+                                        <input name="email " type="text " class="form-control " id="email " pattern="[^ @]*@[^ @]* " placeholder="E-Mail Address " required=" ">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <fieldset>
+                                        <textarea name="message " rows="6 " class="form-control " id="message " placeholder="Your Message " required=" "></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <fieldset>
+                                        <button type="submit " id="form-submit " class="filled-button ">Send Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <p>Copyright &copy; 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js "></script>
+    <script src="assets/js/owl.js "></script>
+    <script src="assets/js/slick.js "></script>
+    <script src="assets/js/accordions.js "></script>
+    <script src="assets/js/timer.js"></script>
+
+    <script language="text/Javascript ">
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t) { //declaring the array outside of the
+            if (!cleared[t.id]) { // function makes it static and global
+                cleared[t.id] = 1; // you could use true and false, but that's more typing
+                t.value = ''; // with more chance of typos
+                t.style.color = '#fff';
+            }
+        }
+
+    </script>
+    <script src="slide.js"></script>
+</body>
+
+</html>
